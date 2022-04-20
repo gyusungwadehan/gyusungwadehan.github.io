@@ -1,0 +1,26 @@
+h1 {
+  text-align: center;
+  line-height: 0.5;
+  margin-bottom: 25px;
+  margin-top: 7px;
+
+  color: #8A75C6;
+}
+h5 {
+  text-align: center;
+  color: #8A75C6;
+}
+
+
+.welcome {
+  font-size: 20px;
+  line-height: 0.6;
+  text-align-last: center;
+  margin-bottom: 25px;
+}
+.secondbox
+{
+
+  background-color: #FFC700;
+  height: 500px;
+}
