@@ -1,3 +1,20 @@
+/* Nav */
+.navbar-brand
+{
+  font-family: 'La Belle Aurore', cursive;
+
+}
+
+body div{
+  border:1px solid red;
+}
+
+/* first box */
+.firstbox
+{
+  background-color: white;
+  height: 600px;
+}
 h1 {
   text-align: center;
   line-height: 0.5;
@@ -11,16 +28,124 @@ h5 {
   color: #8A75C6;
 }
 
-
 .welcome {
   font-size: 20px;
   line-height: 0.6;
   text-align-last: center;
   margin-bottom: 25px;
 }
+
+
+
+/* Second box */
 .secondbox
 {
+  background-color: #F1CB02;
+  height: 1200px;
+}
 
-  background-color: #FFC700;
-  height: 500px;
+#works_header{
+  text-align: center;
+  color: white;
+    font-style: bold;
+}
+#services{
+  text-align: center;
+  color: white;
+    font-style: bold;
+}
+
+
+.image_box{
+  width:200px; height: 200px;
+  margin: 0px 10px 10px 25px;
+}
+
+
+/* Third box */
+.thirdbox
+{
+  background-color: #8A75C6;
+  height: 900px;
+}
+
+.services_number
+{
+  position: absolute;
+  color: white;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 23px;
+line-height: 28px;
+letter-spacing: 0.05em;
+}
+
+.services_jobs
+{
+  text-align: center;
+  line-height: 0.5;
+  margin-bottom: 25px;
+  margin-top: 7px;
+  font-size: 30px;
+  color: white;
+}
+
+/* Fourth box */
+.fourthbox
+{
+  background-color: white;
+  height: 900px;
+}
+
+.skills_header{
+  text-align: center;
+  color: #8A75C6;
+  font-style: bold;
+}
+
+
+.dot {
+  height: 120px;
+  width: 120px;
+  padding: 10px 10px 10px 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.skills_title
+{
+font-weight: bold;
+color: #F1CB02;
+padding: 0px 10px 10px 25px;
+}
+
+/* footer */
+.footer
+{
+  background-color:grey;
+  height: 300px;
+}
+
+.contact_info
+{
+  font-size: 30px;
+  text-align: center;
+  color: black;
+}
+
+.contact_info_detail
+{
+  text-align: center;
+  color: black;
+    margin-top: : 0px;
+    margin-bottom: 0px;
+    line-height: 0;
+}
+
+.copyrights
+{
+  text-align: center;
+  color: black;
 }
