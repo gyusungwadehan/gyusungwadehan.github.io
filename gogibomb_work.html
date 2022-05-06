@@ -43,19 +43,24 @@
       <br></br>
       <br></br>
       <div class="container">
-    <h1 class="header_workpage">Branding Design</h1>
-    <h3 class="subtitle_workpage">Gogibomb Sandwich Restaurant</h3>
+    <h1 class="header_workpage"><strong>Branding Design</strong></h1>
+    <h4 class="subtitle_workpage">Gogibomb Sandwich Restaurant</h4>
   </div>
 </div>
 
-  <div class="container">
+<br></br>
+
+
+  <div id="contents_workpage" class="container">
     <div class="row">
   <div id="leftcontents_workpage" class="col-sm-4">
-    <ul>
-      <li class="list_workpage"><strong>Date</strong> Oct 2021</li>
-      <li class="list_workpage"><strong>Role</strong> Branding & Visualizing </li>
-      <li class="list_workpage"><strong>With</strong> Team Members</li>
+    <aside>
+    <ul class="list_workpage">
+      <li><strong>Date</strong>&nbsp;&nbsp; Oct 2021</li>
+      <li><strong>Role</strong>&nbsp;&nbsp; Branding & Visualizing </li>
+      <li><strong>With</strong>&nbsp;&nbsp; Team Members</li>
     </ul>
+  </aside>
   </div>
   <div id="rightcontents_workpage" class="col-sm-8">
     Project explanation here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -86,36 +91,75 @@
 
 <br></br><br></br><br></br>
   <div class="secondbox" >
+<br></br><br></br><br></br>
+  <div class="container">
+    <div class="slideshow-container">
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="images/gogibomb.png" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="images/wade_magazine.png" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="images/brochure_robert_frank.png" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+
+    
+    </script>
+
+<br></br><br></br><br></br>
+
   </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="" class="d-block" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
 </div>
-
-  </div>
-
 <body>
 
 </body>
